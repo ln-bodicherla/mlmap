@@ -1,0 +1,161 @@
+site_name: The Complete AI/ML Engineer
+site_description: A Practitioner's Journey from Foundations to Frontier — A free, open-access textbook for students, enthusiasts, and aspiring AI/ML engineers.
+site_author: ""
+site_url: https://lnbodicherla.github.io/mlmap/
+
+repo_name: lnbodicherla/mlmap
+repo_url: https://github.com/lnbodicherla/mlmap
+
+copyright: >
+  Copyright &copy; 2026 —
+  Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+
+docs_dir: docs
+
+theme:
+  name: material
+  language: en
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/brain
+
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - minify:
+      minify_html: true
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/lnbodicherla
+  generator: false
+
+nav:
+  - Home: index.md
+
+  - Getting Started:
+    - Title Page: front-matter/00-title-page.md
+    - Preface: front-matter/01-preface.md
+    - Table of Contents: front-matter/02-table-of-contents.md
+    - How to Use This Book: front-matter/03-how-to-use-this-book.md
+
+  - "Part I: Foundations":
+    - "Chapter 1: Python Mastery": part-1-foundations/chapter-01-python-mastery.md
+    - "Chapter 2: Linear Algebra": part-1-foundations/chapter-02-linear-algebra.md
+    - "Chapter 3: Calculus & Optimization": part-1-foundations/chapter-03-calculus-optimization.md
+    - "Chapter 4: Probability & Statistics": part-1-foundations/chapter-04-probability-statistics.md
+
+  - "Part II: Classical ML":
+    - "Chapter 5: Classical ML with Scikit-Learn": part-2-classical-ml/chapter-05-classical-ml.md
+    - "Chapter 6: Deep Learning with PyTorch": part-2-classical-ml/chapter-06-pytorch.md
+    - "Chapter 7: Neural Network Architectures": part-2-classical-ml/chapter-07-architectures.md
+
+  - "Part III: Large Language Models":
+    - "Chapter 8: Fine-Tuning & Adaptation": part-3-llms/chapter-08-fine-tuning.md
+    - "Chapter 9: Alignment": part-3-llms/chapter-09-alignment.md
+    - "Chapter 10: LLM Pretraining": part-3-llms/chapter-10-pretraining.md
+    - "Chapter 11: Scaling Laws": part-3-llms/chapter-11-scaling-laws.md
+
+  - "Part IV: Distributed Training":
+    - "Chapter 12: Parallelism Strategies": part-4-distributed/chapter-12-parallelism.md
+    - "Chapter 13: Mixed Precision & Memory": part-4-distributed/chapter-13-mixed-precision.md
+    - "Chapter 14: Profiling & Performance": part-4-distributed/chapter-14-profiling.md
+
+  - "Part V: GenAI & Applications":
+    - "Chapter 15: RAG & Retrieval": part-5-genai/chapter-15-rag.md
+    - "Chapter 16: Agentic AI": part-5-genai/chapter-16-agents.md
+    - "Chapter 17: Multimodal Models": part-5-genai/chapter-17-multimodal.md
+    - "Chapter 18: LLM Serving": part-5-genai/chapter-18-serving.md
+
+  - "Part VI: MLOps & Infrastructure":
+    - "Chapter 19: MLOps": part-6-mlops/chapter-19-mlops.md
+    - "Chapter 20: Data Engineering": part-6-mlops/chapter-20-data-engineering.md
+    - "Chapter 21: Cloud Platforms": part-6-mlops/chapter-21-cloud.md
+
+  - "Part VII: Frontier Topics":
+    - "Chapter 22: Computer Vision": part-7-frontier/chapter-22-computer-vision.md
+    - "Chapter 23: Reinforcement Learning": part-7-frontier/chapter-23-rl.md
+    - "Chapter 24: Graph ML": part-7-frontier/chapter-24-graph-ml.md
+    - "Chapter 25: Time Series": part-7-frontier/chapter-25-time-series.md
+    - "Chapter 26: ML Security & Responsible AI": part-7-frontier/chapter-26-security-responsible-ai.md
+
+  - Appendices:
+    - "A: Study Plan": appendices/appendix-a-study-plan.md
+    - "B: Essential Papers": appendices/appendix-b-essential-papers.md
+    - "C: Tools Reference": appendices/appendix-c-tools-reference.md
+    - "D: Bibliography": appendices/appendix-d-bibliography.md
+    - "E: Glossary": appendices/appendix-e-glossary.md
