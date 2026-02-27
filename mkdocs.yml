@@ -1,10 +1,10 @@
 site_name: The Complete AI/ML Engineer
 site_description: A Practitioner's Journey from Foundations to Frontier — A free, open-access textbook for students, enthusiasts, and aspiring AI/ML engineers.
 site_author: ""
-site_url: https://lnbodicherla.github.io/mlmap/
+site_url: https://ln-bodicherla.github.io/mlmap/
 
-repo_name: lnbodicherla/mlmap
-repo_url: https://github.com/lnbodicherla/mlmap
+repo_name: ln-bodicherla/mlmap
+repo_url: https://github.com/ln-bodicherla/mlmap
 
 copyright: >
   Copyright &copy; 2026 —
@@ -101,7 +101,7 @@ extra_javascript:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/lnbodicherla
+      link: https://github.com/ln-bodicherla
   generator: false
 
 nav:
